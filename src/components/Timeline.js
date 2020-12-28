@@ -5,7 +5,7 @@ import TimelineEvent from './TimelineEvent';
 const Timeline = (props) => {
   const posts = props.events.map((post) => {
     return (
-      <TimelineEvent key={post.timeStamp} person={post.person} status={post.status} time={post.timeStamp}/>
+      <TimelineEvent key={post.timeStamp} person={post.person} status={post.status} timeStamp={post.timeStamp}/>
     );
   });
   
